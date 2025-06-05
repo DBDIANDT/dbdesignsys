@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[build.env]
+NODE_OPTIONS = "--max-old-space-size=4096"
+NPM_CONFIG_CACHE = "/tmp/.npm"
+
+[deploy]
+startCommand = "npm start"
